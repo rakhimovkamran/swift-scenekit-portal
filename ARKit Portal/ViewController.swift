@@ -45,6 +45,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
+    
+    func setupScene() {
+        let node = SCNNode()
+        
+        let rightWall = createBox(isDoor: false)
+        let leftWall = createBox(isDoor: false)
+        
+        let bottomWall = createBox(isDoor: false)
+        let topWall = createBox(isDoor: false)
+        
+        let rightDoorSide = createBox(isDoor: true)
+        let leftDoorSide = createBox(isDoor: true)
+        
+        self.sceneView.scene.rootNode.addChildNode(node)
+    }
+    
+    
+    
+    
+    
+    
 
     // MARK: - ARSCNViewDelegate
     

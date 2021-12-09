@@ -16,6 +16,7 @@
 		A15DDF2027628B8000068A08 /* ARKit_PortalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF1F27628B8000068A08 /* ARKit_PortalTests.swift */; };
 		A15DDF2A27628B8000068A08 /* ARKit_PortalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF2927628B8000068A08 /* ARKit_PortalUITests.swift */; };
 		A15DDF2C27628B8000068A08 /* ARKit_PortalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF2B27628B8000068A08 /* ARKit_PortalUITestsLaunchTests.swift */; };
+		A15DDF3927628BAF00068A08 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF3827628BAF00068A08 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		A15DDF2527628B8000068A08 /* ARKit PortalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ARKit PortalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15DDF2927628B8000068A08 /* ARKit_PortalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_PortalUITests.swift; sourceTree = "<group>"; };
 		A15DDF2B27628B8000068A08 /* ARKit_PortalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKit_PortalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A15DDF3827628BAF00068A08 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		A15DDEFD27628B7F00068A08 = {
 			isa = PBXGroup;
 			children = (
+				A15DDF3827628BAF00068A08 /* Extensions.swift */,
 				A15DDF0827628B7F00068A08 /* ARKit Portal */,
 				A15DDF1E27628B8000068A08 /* ARKit PortalTests */,
 				A15DDF2827628B8000068A08 /* ARKit PortalUITests */,
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15DDF0E27628B7F00068A08 /* ViewController.swift in Sources */,
+				A15DDF3927628BAF00068A08 /* Extensions.swift in Sources */,
 				A15DDF0A27628B7F00068A08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
