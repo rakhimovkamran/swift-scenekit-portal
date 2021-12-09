@@ -48,15 +48,41 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func setupScene() {
         let node = SCNNode()
+        node.position = SCNVector3(0, 0, 0)
+        
         
         let rightWall = createBox(isDoor: false)
+        rightWall.position = SCNVector3.init(length / 2, 0, 0)
+        
         let leftWall = createBox(isDoor: false)
+        leftWall.position = SCNVector3.init(-length / 2, 0, 0)
         
         let bottomWall = createBox(isDoor: false)
+        bottomWall.position = SCNVector3.init(0, -height / 2, 0)
+        
         let topWall = createBox(isDoor: false)
+        topWall.position = SCNVector3.init(0, height / 2, 0)
+        
+        let backWall = createBox(isDoor: false)
+        backWall.position = SCNVector3.init(0, 0, -length / 2)
         
         let rightDoorSide = createBox(isDoor: true)
+        rightDoorSide.position = SCNVector3(doorLength / 2, 0, length / 2)
+        
         let leftDoorSide = createBox(isDoor: true)
+        leftDoorSide.position = SCNVector3(-doorLength / 2, 0, length / 2)
+        
+        
+        // Adding Nodes to Main Node
+        node.addChildNode(rightWall)
+        node.addChildNode(leftWall)
+        
+        node.addChildNode(bottomWall)
+        node.addChildNode(backWall)
+        node.addChildNode(topWall)
+        
+        node.addChildNode(rightDoorSide)
+        node.addChildNode(leftDoorSide)
         
         self.sceneView.scene.rootNode.addChildNode(node)
     }
