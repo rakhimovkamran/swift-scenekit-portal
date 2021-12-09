@@ -22,11 +22,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
-        // Set the scene to the view
-        sceneView.scene = scene
+        setupScene()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,7 +45,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func setupScene() {
         let node = SCNNode()
-        node.position = SCNVector3(0, 0, 0)
+        node.position = SCNVector3.init(0, 0, 0)
         
         
         let rightWall = createBox(isDoor: false)
@@ -56,21 +53,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         let leftWall = createBox(isDoor: false)
         leftWall.position = SCNVector3.init(-length / 2, 0, 0)
+        leftWall.eulerAngles = SCNVector3.init(0, 180.0.degreesToRadians, 0)
         
         let bottomWall = createBox(isDoor: false)
         bottomWall.position = SCNVector3.init(0, -height / 2, 0)
+        bottomWall.eulerAngles = SCNVector3.init(0, 0, -90.0.degreesToRadians)
         
         let topWall = createBox(isDoor: false)
         topWall.position = SCNVector3.init(0, height / 2, 0)
+        topWall.eulerAngles = SCNVector3.init(0, 0, 90.0.degreesToRadians)
         
         let backWall = createBox(isDoor: false)
         backWall.position = SCNVector3.init(0, 0, -length / 2)
+        backWall.eulerAngles = SCNVector3.init(0, 90.0.degreesToRadians, 0)
         
         let rightDoorSide = createBox(isDoor: true)
-        rightDoorSide.position = SCNVector3(doorLength / 2, 0, length / 2)
+        rightDoorSide.position = SCNVector3.init(doorLength / 2, 0, length / 2)
+        rightDoorSide.eulerAngles = SCNVector3.init(0, -90.0.degreesToRadians, 0)
         
         let leftDoorSide = createBox(isDoor: true)
-        leftDoorSide.position = SCNVector3(-doorLength / 2, 0, length / 2)
+        leftDoorSide.position = SCNVector3.init(-doorLength / 2, 0, length / 2)
+        leftDoorSide.eulerAngles = SCNVector3.init(0, -90.0.degreesToRadians, 0)
         
         
         // Adding Nodes to Main Node

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A15DDF0A27628B7F00068A08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF0927628B7F00068A08 /* AppDelegate.swift */; };
-		A15DDF0C27628B7F00068A08 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A15DDF0B27628B7F00068A08 /* art.scnassets */; };
 		A15DDF0E27628B7F00068A08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15DDF0D27628B7F00068A08 /* ViewController.swift */; };
 		A15DDF1127628B7F00068A08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15DDF0F27628B7F00068A08 /* Main.storyboard */; };
 		A15DDF1327628B8000068A08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15DDF1227628B8000068A08 /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 /* Begin PBXFileReference section */
 		A15DDF0627628B7F00068A08 /* ARKit Portal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit Portal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15DDF0927628B7F00068A08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A15DDF0B27628B7F00068A08 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		A15DDF0D27628B7F00068A08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A15DDF1027628B7F00068A08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A15DDF1227628B8000068A08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				A15DDF0927628B7F00068A08 /* AppDelegate.swift */,
-				A15DDF0B27628B7F00068A08 /* art.scnassets */,
 				A15DDF0D27628B7F00068A08 /* ViewController.swift */,
 				A15DDF0F27628B7F00068A08 /* Main.storyboard */,
 				A15DDF1227628B8000068A08 /* Assets.xcassets */,
@@ -232,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15DDF0C27628B7F00068A08 /* art.scnassets in Resources */,
 				A15DDF1627628B8000068A08 /* LaunchScreen.storyboard in Resources */,
 				A15DDF1327628B8000068A08 /* Assets.xcassets in Resources */,
 				A15DDF1127628B7F00068A08 /* Main.storyboard in Resources */,
@@ -441,6 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7T3HVHF47;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -470,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R7T3HVHF47;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
